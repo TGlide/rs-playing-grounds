@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Slider, Toggle } from 'radix-svelte';
-	import type { ResolvedProps } from 'radix-svelte';
+	import type { ResolvedProps } from 'radix-svelte/internal/helpers';
 
 	let toggleProps: ResolvedProps<typeof Toggle> = {
 		Root: {
