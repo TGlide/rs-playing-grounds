@@ -22,13 +22,11 @@
 <Tabs.Root class={classes} bind:value>
 	<div class="flex flex-col-reverse">
 		<slot />
-		<Tabs.List
-			class="w-full flex items-center bg-c-bg-secondary rounded-t-xl ring-2 ring-c-bg-tertiary pb-0.5"
-		>
+		<Tabs.List class="flex items-center border border-zinc-700 p-2 rounded-md">
 			{#each values as label}
 				<Tabs.Trigger
 					class="px-4 py-3 transition font-medium group relative flex items-center 
-		justify-center text-c-on-bg/50 data-[state=active]:text-c-on-bg {label === value && 'bg-red-500'}"
+		justify-center {label === value && 'bg-zinc-800 rounded-md'}"
 					value={label}
 				>
 					<span class="relative [data-state=active]:text-c-on-bg">{label}</span>
